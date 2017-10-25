@@ -21,6 +21,7 @@ I passed in a path to train_path, with the id of the pokemon's trainer. If the p
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
 It uses flash to catch the errors that the form raises and renders the appropriate message.
+https://github.com/serrapark/proj1
 
 # Give us feedback on the project and decal below!
 
