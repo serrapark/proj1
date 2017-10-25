@@ -30,7 +30,8 @@ class PokemonsController < ApplicationController
     if pokemon.persisted?
       redirect_to train_path(pokemon.trainer_id)
     else
-      redirect_to pokemon_new_path, :flash => { :error => "Name cannot be blank or duplicate!" }
+      redirect_to pokemon_new_path
+      flash[:error] = pokemon.errors.full_messages.to_sentence
     end
   end
 
